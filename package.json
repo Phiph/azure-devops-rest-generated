@@ -1,0 +1,24 @@
+{
+  "name": "azure-devops-rest-generated",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "my-awesome-script-name": "openapi -i https://raw.githubusercontent.com/MicrosoftDocs/vsts-rest-api-specs/master/specification/core/7.2/core.json -o generated-sources/azure/7-2/core --useUnionTypes --useOptions --name CoreApi",
+    "gen-pipelines-7-2": "openapi -i https://raw.githubusercontent.com/MicrosoftDocs/vsts-rest-api-specs/master/specification/pipelines/7.2/pipelines.json   -o generated-sources/azure/7-2/pipelines --useUnionTypes --useOptions --name PipelineApi",
+    "gen-approvals-and-checks-pipeline-permissions-7-2": "openapi -i https://raw.githubusercontent.com/MicrosoftDocs/vsts-rest-api-specs/master/specification/approvalsAndChecks/7.2/pipelinePermissions.json  -o generated-sources/azure/7-2/approvalsAndChecks/pipelinePermissions --useUnionTypes --useOptions --name PipelinePermissionsApi",
+    "gen-approvals-and-checks-pipeline-approval-7-2": "openapi -i https://raw.githubusercontent.com/MicrosoftDocs/vsts-rest-api-specs/master/specification/approvalsAndChecks/7.2/pipelinesapproval.json  -o generated-sources/azure/7-2/approvalsAndChecks/pipelineApproval --useUnionTypes --useOptions --name PipelineApprovalApi",
+    "gen-7-2": "npm run gen-pipelines-7-2 && npm run my-awesome-script-name && npm run gen-approvals-and-checks-pipeline-permissions-7-2 && npm run gen-approvals-and-checks-pipeline-approval-7-2",
+    "gen-7-2-test": "npm run my-awesome-script-name && npm run gen-pipelines-7-2 ",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "@openapitools/openapi-generator-cli": "^2.13.4"
+  },
+  "devDependencies": {
+    "openapi-typescript-codegen": "^0.29.0"
+  }
+}

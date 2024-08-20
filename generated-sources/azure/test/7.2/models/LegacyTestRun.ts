@@ -1,0 +1,78 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+import type { LegacyBuildConfiguration } from './LegacyBuildConfiguration';
+import type { LegacyReleaseReference } from './LegacyReleaseReference';
+import type { LegacyTestRunStatistic } from './LegacyTestRunStatistic';
+import type { RunFilter } from './RunFilter';
+import type { ShallowReference } from './ShallowReference';
+import type { TestExtensionField } from './TestExtensionField';
+import type { TestMessageLogDetails } from './TestMessageLogDetails';
+export type LegacyTestRun = {
+    bugsCount?: number;
+    buildConfigurationId?: number;
+    buildFlavor?: string;
+    buildNumber?: string;
+    buildPlatform?: string;
+    buildReference?: LegacyBuildConfiguration;
+    buildUri?: string;
+    comment?: string;
+    completeDate?: string;
+    configurationIds?: Array<number>;
+    controller?: string;
+    creationDate?: string;
+    csmContent?: string;
+    csmParameters?: string;
+    customFields?: Array<TestExtensionField>;
+    dropLocation?: string;
+    dtlAutEnvironment?: ShallowReference;
+    dtlTestEnvironment?: ShallowReference;
+    dueDate?: string;
+    errorMessage?: string;
+    filter?: RunFilter;
+    incompleteTests?: number;
+    isAutomated?: boolean;
+    isBvt?: boolean;
+    iteration?: string;
+    iterationId?: number;
+    lastUpdated?: string;
+    lastUpdatedBy?: string;
+    lastUpdatedByName?: string;
+    legacySharePath?: string;
+    notApplicableTests?: number;
+    owner?: string;
+    ownerName?: string;
+    passedTests?: number;
+    postProcessState?: string;
+    publicTestSettingsId?: number;
+    releaseEnvironmentUri?: string;
+    releaseReference?: LegacyReleaseReference;
+    releaseUri?: string;
+    revision?: number;
+    rowVersion?: Array<string>;
+    runHasDtlEnvironment?: boolean;
+    runTimeout?: string;
+    serviceVersion?: string;
+    sourceWorkflow?: string;
+    startDate?: string;
+    state?: string;
+    subscriptionName?: string;
+    substate?: string;
+    teamProject?: string;
+    teamProjectUri?: string;
+    testConfigurationsMapping?: string;
+    testEnvironmentId?: string;
+    testMessageLogEntries?: Array<TestMessageLogDetails>;
+    testMessageLogId?: number;
+    testPlanId?: number;
+    testRunId?: number;
+    testRunStatistics?: Array<LegacyTestRunStatistic>;
+    testSettingsId?: number;
+    title?: string;
+    totalTests?: number;
+    type?: string;
+    unanalyzedTests?: number;
+    version?: number;
+};
+
