@@ -16,7 +16,7 @@
   "description": "",
   "dependencies": {
     "@octokit/rest": "^21.0.2",
-    "@openapitools/openapi-generator-cli": "^2.13.4"
+    "@openapitools/openapi-generator-cli": "^2.18.4"
   },
   "devDependencies": {
     "openapi-typescript-codegen": "^0.29.0"
